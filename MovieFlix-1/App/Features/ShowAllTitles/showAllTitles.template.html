@@ -1,0 +1,43 @@
+
+<div ng-repeat="title in showAllTitlesCtrl.titles | filter: showAllTitlesCtrl.search">
+
+    <div style = "
+    height: 240px;
+    padding: 20px;
+    width: 240px;
+    background-color: red;
+    margin: 20px;
+    float: left;
+    ">
+
+     <p>
+         {{title.name}}
+     </p>
+
+        <p>
+            <button ui-sref="viewTitleDetails({id: title.id})">View title details</button>
+        </p>
+
+        <p>
+            <button ui-sref="editTitle({id: title.id})">Edit title</button>
+        </p>
+
+        <p>
+            <button ui-sref="rateTitle({id: title.id})">Rate a title</button>
+        </p>
+
+        <p>
+            <button>Comment on a title</button>
+        </p>
+
+        <p>
+            <button ng-click="showAllTitlesCtrl.deleteTitle($index)">Delete title</button>
+        </p>
+
+
+    </div>
+
+
+
+
+</div>

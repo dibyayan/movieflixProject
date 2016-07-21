@@ -1,0 +1,20 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="signIn">Movie Flix</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="showAllTitles">Show all titles</a></li>
+                <li><a ui-sref="browseCatalog">Browse Catalog</a></li>
+                <li><a ui-sref="addTitle">Add a title</a></li>
+                <li><input placeholder="Search" ng-model="navbarCtrl.search"
+                           ng-keydown="navbarCtrl.filterResults()"
+                           class="form-control"
+                           style="margin-top: 8px;
+                           width: 300px; margin-left: 400px;"/></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

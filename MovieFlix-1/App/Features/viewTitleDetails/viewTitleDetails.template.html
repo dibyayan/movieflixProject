@@ -1,0 +1,23 @@
+<!-- Modal -->
+<div class="modal-dialog">
+    <div class="modal-content">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"  ng-click="viewTitleDetailsCtrl.closeModal()">&times;</button>
+                <h4 class="modal-title">{{viewTitleDetailsCtrl.title.name}} details -- </h4>
+            </div>
+            <div class="modal-body">
+                <p>Year - {{viewTitleDetailsCtrl.title.year}}</p>
+                <p>IMDB Rating - {{viewTitleDetailsCtrl.title.imdbRating}}</p>
+                <p>Director - {{viewTitleDetailsCtrl.title.director}}</p>
+                <p>Plot - {{viewTitleDetailsCtrl.title.plot}}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="viewTitleDetailsCtrl.closeModal()">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
